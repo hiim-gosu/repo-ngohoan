@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TopRepo · NgoHoan — GitHub Tech & Ops Intelligence</title>
+  <meta name="description" content="Theo dõi các dự án GitHub nổi bật và tăng sao nhanh theo ngày, tuần, tháng dành cho Product Manager, Dev, Marketing & AI Operations — repo.ngohoan.com" />
+  <link rel="canonical" href="https://repo.ngohoan.com/" />
+  <link rel="alternate" hreflang="vi-VN" href="https://repo.ngohoan.com/" />
+  <link rel="alternate" hreflang="en-US" href="https://repo.ngohoan.com/?hl=en" />
+  <link rel="alternate" hreflang="x-default" href="https://repo.ngohoan.com/" />
+  <link rel="alternate" type="application/rss+xml" title="TopRepo AI Briefs" href="/feed.xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="TopRepo · ngohoan.com" />
+  <meta property="og:locale" content="vi_VN" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="TopRepo · NgoHoan — GitHub Tech &amp; Ops Intelligence" />
+  <meta property="og:description" content="Theo dõi các dự án GitHub nổi bật và tăng sao nhanh theo ngày, tuần, tháng dành cho Product Manager, Dev, Marketing &amp; AI Operations." />
+  <meta property="og:url" content="https://repo.ngohoan.com/" />
+  <meta property="og:image" content="https://repo.ngohoan.com/og-default.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TopRepo · NgoHoan — GitHub Tech &amp; Ops Intelligence" />
+  <meta name="twitter:description" content="Theo dõi các dự án GitHub nổi bật và tăng sao nhanh theo ngày, tuần, tháng." />
+  <meta name="twitter:image" content="https://repo.ngohoan.com/og-default.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"TopRepo · ngohoan.com","url":"https://repo.ngohoan.com/","inLanguage":["vi","en"],"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://repo.ngohoan.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Fira+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap&subset=vietnamese" rel="stylesheet" />
+  <script>try{var t=localStorage.getItem("toprepo_theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="navbar-left">
+        <a href="#repos" class="brand" id="brand-home">
+          <span class="brand-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 3v18h18" />
+              <path d="m19 9-5 5-4-4-3 3" />
+            </svg>
+          </span>
+          <span class="brand-name">TopRepo</span>
+          <span class="brand-sub">ngohoan.com</span>
+        </a>
+
+        <nav class="nav-tabs" aria-label="Điều hướng chính">
+          <button type="button" class="nav-tab is-active" data-tab="repos" data-i18n="nav_repos">Repo</button>
+          <button type="button" class="nav-tab" data-tab="categories" data-i18n="nav_categories">Danh mục</button>
+          <button type="button" class="nav-tab" data-tab="featured" data-i18n="nav_featured">Đề xuất</button>
+          <a class="nav-tab" id="nav-vietnam" href="/vietnam/" data-i18n="nav_vietnam">Việt Nam</a>
+          <a class="nav-tab" id="nav-deals" href="/deals/" data-i18n="nav_deals" hidden>Deals</a>
+          <button type="button" class="nav-tab" data-tab="reports" data-i18n="nav_reports">Báo cáo AI</button>
+          <button type="button" class="nav-tab" data-tab="about" data-i18n="nav_about">Giới thiệu</button>
+        </nav>
+      </div>
+
+      <div class="navbar-right">
+        <a href="https://ngohoan.com" target="_blank" rel="noopener" class="icon-link" title="ngohoan.com" aria-label="Website NgoHoan">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </a>
+        <a href="https://github.com/trending" target="_blank" rel="noopener" class="icon-link" title="GitHub Trending" aria-label="GitHub Trending">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+
+        <button type="button" id="theme-toggle" class="icon-link theme-toggle" aria-label="Chuyển giao diện Sáng/Tối" title="Chuyển giao diện Sáng/Tối">
+          <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+          <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2m-7.07-15.07 1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2m-15.07 7.07 1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+        </button>
+
+        <div class="lang-switch" role="group" aria-label="Chọn ngôn ngữ">
+          <svg class="lang-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m5 8 6 6"></path>
+            <path d="m4 14 6-6 2-3"></path>
+            <path d="M2 5h12"></path>
+            <path d="M7 2h1"></path>
+            <path d="m22 22-5-10-5 10"></path>
+            <path d="M14 18h6"></path>
+          </svg>
+          <button type="button" class="lang-btn is-active" data-lang="vi">VI</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <!-- TAB: REPOS -->
+    <section id="view-repos" class="tab-view is-active">
+      <div class="hero-card">
+        <div class="hero-top">
+          <div class="hero-title-group">
+            <div class="hero-heading-row">
+              <h1 class="hero-title" data-i18n="hero_title">Repo đang lên</h1>
+              <span class="pill-badge pill-blue">
+                <span class="dot-pulse" aria-hidden="true"></span>
+                <span data-i18n="hero_live_badge">Cập nhật hằng ngày từ GitHub</span>
+              </span>
+            </div>
+            <p class="hero-subtitle">
+              <span data-i18n="hero_subtitle">Repo GitHub chọn lọc: nổi bật và đang tăng sao theo ngày, tuần, tháng.</span>
+            </p>
+            <div class="tracked-wrap">
+              <button type="button" id="tracked-btn" class="tracked-btn" aria-expanded="false" aria-controls="tracked-popover">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 16v-4"></path>
+                  <path d="M12 8h.01"></path>
+                </svg>
+                <span data-i18n="tracked_btn">Theo dõi những repo nào?</span>
+              </button>
+              <div id="tracked-popover" class="info-popover" role="dialog" aria-labelledby="tracked-title" hidden>
+                <h2 id="tracked-title" class="info-popover-title" data-i18n="tracked_title">Cách chọn repo và tính tăng trưởng</h2>
+                <p data-i18n="tracked_p1"></p>
+                <p data-i18n="tracked_p2"></p>
+                <p data-i18n="tracked_p3"></p>
+                <p data-i18n="tracked_p4"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-stats" id="hero-stats">
+            <div class="stat-pill">
+              <svg class="stat-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path>
+              </svg>
+              <strong id="stat-total-repos">—</strong>
+              <span data-i18n="stat_repos">repo theo dõi</span>
+            </div>
+            <div class="stat-pill">
+              <svg class="stat-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              <strong id="stat-total-stars">—</strong>
+              <span data-i18n="stat_stars">tổng sao</span>
+            </div>
+            <div class="stat-pill">
+              <svg class="stat-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <strong id="stat-developers">—</strong>
+              <span data-i18n="stat_devs">nhà phát triển</span>
+            </div>
+            <div class="stat-pill">
+              <svg class="stat-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <strong id="stat-countries">—</strong>
+              <span data-i18n="stat_countries">quốc gia</span>
+            </div>
+            <div class="stat-pill">
+              <svg class="stat-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                <polyline points="16 7 22 7 22 13"></polyline>
+              </svg>
+              <strong id="stat-rising">—</strong>
+              <span data-i18n="stat_rising">repo đang tăng sao</span>
+            </div>
+            <div class="stat-pill">
+              <svg class="stat-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <strong id="stat-updated">—</strong>
+              <span data-i18n="stat_updated">cập nhật lúc</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <button type="button" class="cta-pill cta-primary" id="btn-open-report">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+            </svg>
+            <span data-i18n="cta_report">Đọc Báo cáo Phân tích PM &amp; Ops Hôm Nay</span>
+          </button>
+          <a href="https://ngohoan.com" target="_blank" rel="noopener" class="cta-pill cta-secondary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            <span>ngohoan.com</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- TOP MOVERS (24h) -->
+      <section class="movers-wrap" id="movers-wrap" hidden>
+        <div class="sec-head">
+          <h2 data-i18n="movers_title">Tăng mạnh nhất 24 giờ</h2>
+          <p data-i18n="movers_sub">Số sao mới trong ngày, so với repo dẫn đầu</p>
+        </div>
+        <div class="movers" id="movers"></div>
+      </section>
+
+      <!-- FILTER BAR -->
+      <div class="filter-bar">
+        <div class="search-wrap">
+          <svg class="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="search" id="search-input" class="search-input" placeholder="Tìm repo, mô tả..." autocomplete="off" />
+          <kbd class="kbd-hint" title="Nhấn / để tìm nhanh">/</kbd>
+        </div>
+
+        <button type="button" id="filters-toggle" class="filters-toggle" aria-expanded="false" aria-controls="filter-controls">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+          </svg>
+          <span data-i18n="filters_btn">Bộ lọc</span>
+          <span class="filter-count" id="filter-count" hidden>0</span>
+        </button>
+
+        <div class="sort-wrap">
+          <svg class="sort-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m3 16 4 4 4-4"></path>
+            <path d="M7 20V4"></path>
+            <path d="M11 4h10"></path>
+            <path d="M11 8h7"></path>
+            <path d="M11 12h4"></path>
+          </svg>
+          <select id="sort-select" class="filter-select filter-sort" aria-label="Sắp xếp danh sách">
+            <option value="stars_1d" data-i18n="sort_1d">Tăng 1 ngày</option>
+            <option value="stars_7d" data-i18n="sort_7d">Tăng 7 ngày</option>
+            <option value="stars_30d" data-i18n="sort_30d">Tăng 30 ngày</option>
+            <option value="rising_7d" data-i18n="sort_rising">Tăng nhanh (% 7 ngày)</option>
+            <option value="pushed_at" data-i18n="sort_pushed">Mới đẩy code</option>
+            <option value="streak" data-i18n="sort_streak">Chuỗi ngày trending</option>
+            <option value="total_stars" data-i18n="sort_stars">Tổng sao</option>
+            <option value="created_at" data-i18n="sort_created">Mới tạo gần đây</option>
+          </select>
+        </div>
+
+        <div class="filter-controls" id="filter-controls">
+          <select id="filter-category" class="filter-select" aria-label="Lọc theo danh mục">
+            <option value="all">Nhóm: tất cả</option>
+          </select>
+
+          <select id="filter-language" class="filter-select" aria-label="Lọc theo ngôn ngữ lập trình">
+            <option value="all">Ngôn ngữ: tất cả</option>
+          </select>
+
+          <select id="filter-country" class="filter-select" aria-label="Lọc theo quốc gia của owner">
+            <option value="all">Quốc gia: tất cả</option>
+          </select>
+
+          <select id="filter-activity" class="filter-select" aria-label="Lọc theo trạng thái hoạt động">
+            <option value="all">Hoạt động: tất cả</option>
+          </select>
+
+          <select id="filter-period" class="filter-select" aria-label="Lọc theo chu kỳ trending">
+            <option value="all" data-i18n="period_all">Chu kỳ: tất cả</option>
+            <option value="1d" data-i18n="period_1d">Trending 1 ngày</option>
+            <option value="7d" data-i18n="period_7d">Trending 7 ngày</option>
+            <option value="30d" data-i18n="period_30d">Trending 30 ngày</option>
+          </select>
+
+          <label class="toggle-chip">
+            <input type="checkbox" id="filter-hide-docs" />
+            <span data-i18n="hide_docs">Ẩn repo tài liệu</span>
+          </label>
+
+          <label class="toggle-chip">
+            <input type="checkbox" id="filter-vi" />
+            <span data-i18n="only_vi">Hỗ trợ tiếng Việt</span>
+          </label>
+
+          <button type="button" id="filter-reset" class="reset-btn" data-i18n="reset_filters" hidden>Xoá bộ lọc</button>
+        </div>
+      </div>
+
+      <!-- QUICK CATEGORY PILLS -->
+      <div class="quick-pills" id="quick-category-pills" aria-label="Lọc nhanh theo danh mục"></div>
+
+      <!-- DATA TABLE CARD -->
+      <div class="table-card">
+        <div class="table-scroll">
+          <table class="repo-table">
+            <thead>
+              <tr>
+                <th class="col-rank">#</th>
+                <th class="col-repo" data-i18n="col_repo">Repo</th>
+                <th class="col-lang" data-i18n="col_lang">Ngôn ngữ</th>
+                <th class="col-stars text-right" data-i18n="col_stars">Sao</th>
+                <th class="col-delta col-d1 text-right" data-i18n="col_1d">1 ngày</th>
+                <th class="col-delta col-d7 text-right" data-i18n="col_7d">7 ngày</th>
+                <th class="col-delta col-d30 text-right" data-i18n="col_30d">30 ngày</th>
+                <th class="col-date text-right" data-i18n="col_created">Tạo lúc</th>
+              </tr>
+            </thead>
+            <tbody id="repo-tbody">
+              <tr>
+                <td colspan="8" class="empty-cell">Đang tải dữ liệu GitHub...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-footer" id="table-footer">
+          <span class="table-count" id="table-count"></span>
+          <div class="pagination" id="pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB: CATEGORIES -->
+    <section id="view-categories" class="tab-view" hidden>
+      <div class="section-header">
+        <h2 data-i18n="cat_title">8 Nhóm Công Cụ Thực Chiến</h2>
+        <p data-i18n="cat_subtitle">Chọn một danh mục để lọc nhanh các repository phục vụ E-commerce, Marketing &amp; AI Operations.</p>
+      </div>
+      <div class="categories-grid" id="categories-grid"></div>
+    </section>
+
+    <!-- TAB: FEATURED / RECOMMENDED -->
+    <section id="view-featured" class="tab-view" hidden>
+      <div class="section-header">
+        <h2 data-i18n="feat_title">Đề Xuất Nổi Bật Hôm Nay</h2>
+        <p data-i18n="feat_subtitle">Tổng hợp các repo đang tăng sao nóng trên GitHub Trending (1d / 7d / 30d) và được phân tích trong bản tin PM &amp; Ops mới nhất.</p>
+      </div>
+      <div class="featured-grid" id="featured-grid"></div>
+    </section>
+
+    <!-- TAB: AI REPORTS -->
+    <section id="view-reports" class="tab-view" hidden>
+      <div class="reports-layout">
+        <aside class="reports-sidebar">
+          <h3 class="sidebar-title" data-i18n="rep_history">Lịch sử Bản tin (07:00 ICT)</h3>
+          <div class="report-date-list" id="report-date-list"></div>
+        </aside>
+        <article class="report-reader" id="report-reader">
+          <p class="empty-cell">Chưa có bản báo cáo nào.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TAB: ABOUT -->
+    <section id="view-about" class="tab-view" hidden>
+      <div class="about-card">
+        <h2 data-i18n="about_title">Về repo.ngohoan.com</h2>
+        <p data-i18n="about_p1">
+          repo.ngohoan.com là bảng theo dõi tình báo công nghệ mã nguồn mở, tự động thu thập dữ liệu từ GitHub Trending (Ngày / Tuần / Tháng) mỗi sáng lúc 07:00 (UTC+7) qua GitHub Actions, kết hợp phân tích bởi Gemini AI theo lăng kính Product Manager &amp; System Operations.
+        </p>
+        <div class="about-grid">
+          <div class="about-box">
+            <h3 data-i18n="about_b1_t">Cập nhật tự động 07:00 ICT</h3>
+            <p data-i18n="about_b1_d">Pipeline tự động quét daily, weekly &amp; monthly trending, lọc nhiễu (bỏ danh sách awesome/interview), theo dõi streak &gt; 3 ngày và đẩy bản tin lên web + Telegram.</p>
+          </div>
+          <div class="about-box">
+            <h3 data-i18n="about_b2_t">Tập trung Ứng dụng Thực chiến</h3>
+            <p data-i18n="about_b2_d">Ưu tiên AI Agents, MCP, Video/Media AI, Web Scraper, Automation Workflow, E-commerce &amp; các giải pháp Open-Source SaaS Killer.</p>
+          </div>
+        </div>
+        <h3 class="about-subtitle" data-i18n="about_method_title">Phương pháp</h3>
+        <div class="about-grid about-method">
+          <div class="about-box">
+            <p data-i18n="tracked_p1"></p>
+          </div>
+          <div class="about-box">
+            <p data-i18n="tracked_p2"></p>
+          </div>
+          <div class="about-box">
+            <p data-i18n="tracked_p3"></p>
+          </div>
+          <div class="about-box">
+            <p data-i18n="tracked_p4"></p>
+          </div>
+          <div class="about-box">
+            <p data-i18n="about_m5_d"></p>
+          </div>
+          <div class="about-box">
+            <p data-i18n="about_m6_d"></p>
+          </div>
+        </div>
+        <p class="about-data" data-i18n="about_data"></p>
+        <div class="about-links">
+          <a href="https://ngohoan.com" target="_blank" rel="noopener" class="cta-pill cta-primary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            <span>ngohoan.com</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SLIDE-OVER REPO DETAIL DRAWER -->
+  <div id="drawer-backdrop" class="drawer-backdrop" hidden></div>
+  <aside id="repo-drawer" class="repo-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>
+    <div class="drawer-header">
+      <div class="drawer-brand" id="drawer-brand"></div>
+      <button type="button" id="drawer-close" class="icon-link" aria-label="Đóng chi tiết">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer-body" id="drawer-body"></div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 <strong>repo.ngohoan.com</strong> · Powered by GitHub Trending Intelligence</span>
+      <span class="footer-note" data-i18n="footer_note">Dữ liệu cập nhật tự động mỗi ngày lúc 07:00 sáng (GMT+7)</span>
+    </div>
+  </footer>
+
+  <script src="filters.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>doannc2212/quickshell-config: số sao, tăng trưởng và contributor | TopRepo</title>
+  <meta name="description" content="A gentle Quickshell config for Hyprland - status bar, app launcher, notification daemon, and theme switcher with 206 themes. Each piece works on its own, take…" />
+  <link rel="canonical" href="https://repo.ngohoan.com/repos/doannc2212/quickshell-config/" />
+  <link rel="alternate" hreflang="vi-VN" href="https://repo.ngohoan.com/repos/doannc2212/quickshell-config/" />
+  <link rel="alternate" hreflang="en-US" href="https://repo.ngohoan.com/en/repos/doannc2212/quickshell-config/" />
+  <link rel="alternate" hreflang="x-default" href="https://repo.ngohoan.com/repos/doannc2212/quickshell-config/" />
+  <link rel="alternate" type="application/rss+xml" title="TopRepo AI Briefs" href="/feed.xml" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="TopRepo · ngohoan.com" />
+  <meta property="og:locale" content="vi_VN" />
+  <meta property="og:title" content="doannc2212/quickshell-config: số sao, tăng trưởng và contributor | TopRepo" />
+  <meta property="og:description" content="A gentle Quickshell config for Hyprland - status bar, app launcher, notification daemon, and theme switcher with 206 themes. Each piece works on its own, take…" />
+  <meta property="og:url" content="https://repo.ngohoan.com/repos/doannc2212/quickshell-config/" />
+  <meta property="og:image" content="https://repo.ngohoan.com/og-default.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="doannc2212/quickshell-config: số sao, tăng trưởng và contributor | TopRepo" />
+  <meta name="twitter:description" content="A gentle Quickshell config for Hyprland - status bar, app launcher, notification daemon, and theme switcher with 206 themes. Each piece works on its own, take…" />
+  <meta name="twitter:image" content="https://repo.ngohoan.com/og-default.png" />
+  <script>try{var t=localStorage.getItem("toprepo_theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Fira+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap&subset=vietnamese" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareSourceCode","name":"doannc2212/quickshell-config","description":"A gentle Quickshell config for Hyprland - status bar, app launcher, notification daemon, and theme switcher with 206 themes. Each piece works on its own, take what you like.","url":"https://repo.ngohoan.com/repos/doannc2212/quickshell-config/","codeRepository":"https://github.com/doannc2212/quickshell-config","image":"https://github.com/doannc2212.png?size=128","programmingLanguage":"QML","dateCreated":"2026-02-13","keywords":"app-launcher, catppuccin, desktop-customization, dotfiles, hyprland, linux"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://repo.ngohoan.com/"},{"@type":"ListItem","position":2,"name":"DevTools \u0026 Hạ tầng","item":"https://repo.ngohoan.com/categories/devtools-infra/"},{"@type":"ListItem","position":3,"name":"doannc2212/quickshell-config","item":"https://repo.ngohoan.com/repos/doannc2212/quickshell-config/"}]}]}</script>
+</head>
+<body class="static-page">
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="navbar-left">
+        <a href="/" class="brand">
+          <span class="brand-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18" /><path d="m19 9-5 5-4-4-3 3" /></svg>
+          </span>
+          <span class="brand-name">TopRepo</span>
+          <span class="brand-sub">ngohoan.com</span>
+        </a>
+        <nav class="nav-tabs" aria-label="Điều hướng chính"><a class="nav-tab is-active" href="/" aria-current="page">Repo</a><a class="nav-tab" href="/#categories">Danh mục</a><a class="nav-tab" href="/vietnam/">Việt Nam</a><a class="nav-tab" href="/#reports">Báo cáo AI</a></nav>
+      </div>
+      <div class="navbar-right">
+        <a href="https://ngohoan.com" target="_blank" rel="noopener" class="icon-link" title="ngohoan.com" aria-label="Về trang chủ ngohoan.com">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        </a>
+        <button type="button" id="theme-toggle" class="icon-link theme-toggle" aria-label="Chuyển giao diện Sáng/Tối" title="Chuyển giao diện Sáng/Tối">
+          <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+          <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2m-7.07-15.07 1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2m-15.07 7.07 1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+        </button>
+        <div class="lang-switch" role="group" aria-label="Chọn ngôn ngữ">
+          <a class="lang-btn is-active" href="/repos/doannc2212/quickshell-config/" hreflang="vi" lang="vi">VI</a>
+          <a class="lang-btn" href="/en/repos/doannc2212/quickshell-config/" hreflang="en" lang="en">EN</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Trang chủ</a><span class="breadcrumb-sep" aria-hidden="true">›</span><a href="/categories/devtools-infra/">DevTools &amp; Hạ tầng</a><span class="breadcrumb-sep" aria-hidden="true">›</span><span aria-current="page">doannc2212/quickshell-config</span></nav>
+    <section class="hero-card detail-hero">
+      <div class="detail-head">
+        <img class="detail-avatar" src="https://github.com/doannc2212.png?size=128" alt="" width="64" height="64" />
+        <div class="detail-title-group">
+          <h1 class="detail-title"><span class="repo-owner">doannc2212/</span>quickshell-config</h1>
+          <p class="hero-subtitle">A gentle Quickshell config for Hyprland - status bar, app launcher, notification daemon, and theme switcher with 206 themes. Each piece works on its own, take what you like.</p>
+          <div class="repo-tags"><a class="tag-pill" href="/categories/devtools-infra/"><span class="cat-dot" style="background:#64748B"></span><span>DevTools &amp; Hạ tầng</span></a><span class="tag-pill">QML</span><a class="tag-pill" href="/vietnam/"><span aria-hidden="true">🇻🇳</span> <span data-country="VN">Vietnam</span></a></div>
+          <div class="hero-actions">
+            <a class="cta-pill cta-primary" href="https://github.com/doannc2212/quickshell-config" target="_blank" rel="noopener">Mở trên GitHub</a>
+            <a class="cta-pill cta-secondary" href="/?q=doannc2212%2Fquickshell-config">Xem trong bảng xếp hạng</a>
+          </div>
+        </div>
+      </div>
+      <div class="detail-kpis"><div class="kpi-box"><div class="kpi-label">Tổng sao</div><div class="kpi-val">109</div></div><div class="kpi-box"><div class="kpi-label">Tăng 1 ngày</div><div class="kpi-val">0</div></div><div class="kpi-box"><div class="kpi-label">Tăng 7 ngày</div><div class="kpi-val is-na" title="Chưa đủ dữ liệu: cần thêm ngày lưu số sao">chưa đủ</div></div><div class="kpi-box"><div class="kpi-label">Tăng 30 ngày</div><div class="kpi-val is-na" title="Chưa đủ dữ liệu: cần thêm ngày lưu số sao">chưa đủ</div></div><div class="kpi-box"><div class="kpi-label">Chuỗi trending</div><div class="kpi-val">0 ngày</div></div><div class="kpi-box"><div class="kpi-label">Fork</div><div class="kpi-val">9</div></div></div>
+    </section>
+
+    <div class="detail-grid">
+      <section class="detail-card detail-chart">
+        <h2 class="detail-card-title">Lịch sử sao</h2>
+        <svg class="star-chart" viewBox="0 0 600 240" width="100%" role="img" aria-label="Số sao theo ngày: 110 (2026-11-17) → 109 (2026-11-21)" xmlns="http://www.w3.org/2000/svg"><title>Số sao theo ngày: 110 (2026-11-17) → 109 (2026-11-21)</title><line class="chart-grid" x1="88" y1="14" x2="586" y2="14"/><line class="chart-grid" x1="88" y1="212" x2="586" y2="212"/><text class="chart-label" x="80" y="18" text-anchor="end">110</text><text class="chart-label" x="80" y="212" text-anchor="end">109</text><text class="chart-label" x="88" y="232" text-anchor="start">2026-11-17</text><text class="chart-label" x="586" y="232" text-anchor="end">2026-11-21</text><path class="chart-area" d="M88.0,212 L88.0,14.0 L254.0,212.0 L420.0,212.0 L586.0,212.0 L586.0,212 Z"/><polyline class="chart-line" points="88.0,14.0 254.0,212.0 420.0,212.0 586.0,212.0"/><circle class="chart-dot" cx="586.0" cy="212.0" r="4"/></svg>
+        <p class="detail-note">Số sao được ghi lại mỗi ngày lúc 07:00 (GMT+7) từ 2026-11-16; tối đa 90 ngày gần nhất.</p>
+      </section>
+
+      <section class="detail-card">
+        <h2 class="detail-card-title">Thông tin</h2>
+        <dl class="meta-list"><div><dt>Nhóm</dt><dd>DevTools &amp; Hạ tầng</dd></div><div><dt>Hoạt động</dt><dd><span class="status-dot is-active" aria-hidden="true"></span> Đang hoạt động · đẩy code lần cuối 2026-10-20</dd></div><div><dt>Ngôn ngữ</dt><dd>QML</dd></div><div><dt>Giấy phép</dt><dd>Không rõ</dd></div><div><dt>Ngày tạo</dt><dd>2026-02-13</dd></div><div><dt>Quốc gia owner</dt><dd><span aria-hidden="true">🇻🇳</span> <span data-country="VN">Vietnam</span></dd></div><div><dt>Topics</dt><dd><div class="topic-list"><span class="topic-chip">app-launcher</span><span class="topic-chip">catppuccin</span><span class="topic-chip">desktop-customization</span><span class="topic-chip">dotfiles</span><span class="topic-chip">hyprland</span><span class="topic-chip">linux</span></div></dd></div></dl>
+      </section>
+
+      <section class="detail-card">
+        <h2 class="detail-card-title">Top contributor</h2>
+        <ol class="contrib-list"><li><img src="https://github.com/doannc2212.png?size=48" alt="" width="24" height="24" loading="lazy" /><a href="https://github.com/doannc2212" target="_blank" rel="noopener">doannc2212</a><span class="contrib-flag" title="Vietnam">🇻🇳</span><span class="contrib-commits">60 commit</span></li><li><img src="https://github.com/Longpiggy.png?size=48" alt="" width="24" height="24" loading="lazy" /><a href="https://github.com/Longpiggy" target="_blank" rel="noopener">Longpiggy</a><span class="contrib-commits">2 commit</span></li></ol>
+      </section>
+
+      <section class="detail-card">
+        <h2 class="detail-card-title">Cùng nhóm đang tăng nhanh</h2>
+        <ol class="related-list"><li><img src="https://github.com/we-promise.png?size=48" alt="" width="24" height="24" loading="lazy" /><a href="/repos/we-promise/sure/">we-promise/sure</a><span class="delta-pill">+2.5K</span></li><li><img src="https://github.com/pookjw.png?size=48" alt="" width="24" height="24" loading="lazy" /><a href="/repos/pookjw/HermesEnabler/">pookjw/HermesEnabler</a><span class="delta-pill">+582</span></li><li><img src="https://github.com/storytold.png?size=48" alt="" width="24" height="24" loading="lazy" /><a href="/repos/storytold/craft-anything/">storytold/craft-anything</a><span class="star-val"><svg class="star-svg" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>39.6K</span></li><li><img src="https://github.com/XiaoYouChR.png?size=48" alt="" width="24" height="24" loading="lazy" /><a href="/repos/XiaoYouChR/Ghost-Downloader-3/">XiaoYouChR/Ghost-Downloader-3</a><span class="star-val"><svg class="star-svg" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>13.9K</span></li><li><img src="https://github.com/krisgfx9.png?size=48" alt="" width="24" height="24" loading="lazy" /><a href="/repos/krisgfx9/Wireless-Device-Battery-Monitor/">krisgfx9/Wireless-Device-Battery-Monitor</a><span class="star-val"><svg class="star-svg" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>5.4K</span></li></ol>
+      </section>
+
+      <section class="detail-card detail-wide" id="badge">
+        <h2 class="detail-card-title">Badge README</h2>
+        <p class="detail-note">Gắn badge vào README để hiện thứ hạng trong nhóm và số sao tăng mỗi tuần. Ảnh badge cập nhật mỗi ngày.</p>
+        <p class="badge-preview"><img src="/badge/doannc2212/quickshell-config.svg" alt="Badge TopRepo của doannc2212/quickshell-config" height="20" /></p>
+        <div class="snippet-grid"><div class="snippet"><div class="snippet-head"><span>Markdown</span><button type="button" class="copy-btn" data-copy="snippet-md" data-copied="Đã chép">Chép</button></div><pre id="snippet-md"><code>[![Badge TopRepo của doannc2212/quickshell-config](https://repo.ngohoan.com/badge/doannc2212/quickshell-config.svg)](https://repo.ngohoan.com/repos/doannc2212/quickshell-config/)</code></pre></div><div class="snippet"><div class="snippet-head"><span>HTML</span><button type="button" class="copy-btn" data-copy="snippet-html" data-copied="Đã chép">Chép</button></div><pre id="snippet-html"><code>&lt;a href=&quot;https://repo.ngohoan.com/repos/doannc2212/quickshell-config/&quot;&gt;&lt;img src=&quot;https://repo.ngohoan.com/badge/doannc2212/quickshell-config.svg&quot; alt=&quot;Badge TopRepo của doannc2212/quickshell-config&quot; height=&quot;20&quot; /&gt;&lt;/a&gt;</code></pre></div></div>
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 <strong>repo.ngohoan.com</strong> · Powered by GitHub Trending Intelligence</span>
+      <span class="footer-note">Dữ liệu cập nhật tự động mỗi ngày lúc 07:00 sáng (GMT+7)</span>
+    </div>
+  </footer>
+  <script src="/site.js" defer></script>
+</body>
+</html>

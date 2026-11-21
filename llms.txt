@@ -1,0 +1,28 @@
+# TopRepo · repo.ngohoan.com
+
+> Daily leaderboard of about 3,000 rising GitHub repositories for product, engineering, marketing and AI-operations teams, in Vietnamese and English. Star growth over 1, 7 and 30 days is measured from our own daily star snapshots (taken at 07:00 GMT+7), not estimated.
+
+## Pages
+
+- [Leaderboard (Vietnamese)](https://repo.ngohoan.com/) and [English](https://repo.ngohoan.com/?hl=en): sortable, filterable table of every tracked repo.
+- [Vietnam](https://repo.ngohoan.com/en/vietnam/): repos owned from Vietnam, repos supporting Vietnamese, and Vietnamese developers.
+- Repo pages: `https://repo.ngohoan.com/repos/{owner}/{name}/` (English: `https://repo.ngohoan.com/en/repos/{owner}/{name}/`) with star history, metadata and top contributors.
+- README badges: `https://repo.ngohoan.com/badge/{owner}/{name}.svg` (rank in category and weekly star gain, refreshed daily).
+
+## Categories
+
+- [AI Agents & MCP](https://repo.ngohoan.com/en/categories/ai-agents/): Autonomous agents, Model Context Protocol servers, multi-agent orchestration & coding assistants.
+- [Video & Media AI](https://repo.ngohoan.com/en/categories/video-media/): Programmatic video rendering, TTS/Voice AI, ad visual generation & media processing.
+- [Automation & Workflow](https://repo.ngohoan.com/en/categories/automation/): Workflow engines, webhooks, background job orchestration & operational automation.
+- [Web Scraper & Crawl](https://repo.ngohoan.com/en/categories/web-scraper/): Web scraping, headless browser automation, anti-bot crawling & competitor monitoring.
+- [E-com & Marketing](https://repo.ngohoan.com/en/categories/ecom-marketing/): E-commerce infrastructure, PIM/catalog, SEO, email marketing & growth analytics.
+- [SaaS Alternatives](https://repo.ngohoan.com/en/categories/saas-killer/): Self-hosted open-source alternatives replacing paid SaaS tools for teams.
+- [LLM & RAG](https://repo.ngohoan.com/en/categories/llm-rag/): Vector databases, RAG pipelines, document parsing, knowledge graphs & LLM tooling.
+- [DevTools & Infra](https://repo.ngohoan.com/en/categories/devtools-infra/): Code review, testing, security scanners, CLI utilities & developer infrastructure.
+
+## Data
+
+- [repos.json](https://repo.ngohoan.com/data/repos.json): `{"stats", "categories", "fields", "repos"}`; each entry of `repos` is an array in `fields` order: `full_name`, `description`, `language`, `total_stars`, `stars_1d`, `stars_7d`, `stars_30d`, `consecutive_days`, `category_id`, `created_at`, `topics`, `is_trending_today`, `forks`, `license`, `pushed_at`, `archived`, `rising_7d`, `activity`, `is_docs`, `country`, `supports_vi`. Growth fields are `null` until enough snapshot days exist.
+- [reports.json](https://repo.ngohoan.com/data/reports.json): daily AI briefs in Markdown.
+- [feed.xml](https://repo.ngohoan.com/feed.xml): RSS of the AI briefs.
+- [sitemap.xml](https://repo.ngohoan.com/sitemap.xml): every page with its language alternates.
